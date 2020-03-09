@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><AppiumAUT><XCUIElementTypeApplication type="XCUIElementTypeApplication" name="EriBank" label="EriBank" enabled="true" visible="true" x="0" y="0" width="414" height="896">
+  <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="true" x="0" y="0" width="414" height="896">
+    <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="414" height="896">
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="414" height="896">
+        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="414" height="896">
+          <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="414" height="896">
+            <XCUIElementTypeOther type="XCUIElementTypeOther" name="mortageRequestTwoView" label="mortageRequestTwoView" enabled="true" visible="true" x="0" y="0" width="414" height="896">
+              <XCUIElementTypeTable type="XCUIElementTypeTable" name="optionsTableView" label="optionsTableView" enabled="true" visible="true" x="0" y="0" width="414" height="852">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="-116" width="414" height="22">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Type Of Loan" name="Type Of Loan" label="Type Of Loan" enabled="true" visible="false" x="0" y="-116" width="414" height="22"/>
+                </XCUIElementTypeOther>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="-358" width="414" height="44">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="-380" width="394" height="1"/>
+                  <XCUIElementTypeButton type="XCUIElementTypeButton" name="checkmark" label="checkmark" enabled="false" visible="false" x="0" y="-380" width="20" height="17"/>
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Quick" name="Quick" label="Quick" enabled="true" visible="false" x="0" y="-380" width="345" height="44"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="-314" width="414" height="44">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="-380" width="394" height="1"/>
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Home" name="Home" label="Home" enabled="true" visible="false" x="0" y="-380" width="374" height="44"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="-270" width="414" height="44">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="-380" width="394" height="1"/>
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Car" name="Car" label="Car" enabled="true" visible="false" x="0" y="-380" width="374" height="44"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="-226" width="414" height="44">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="-380" width="394" height="1"/>
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Personal" name="Personal" label="Personal" enabled="true" visible="false" x="0" y="-380" width="374" height="44"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="-182" width="414" height="44">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="-380" width="394" height="1"/>
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Education" name="Education" label="Education" enabled="true" visible="false" x="0" y="-380" width="374" height="44"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="-138" width="414" height="44">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="-380" width="414" height="1"/>
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Professional" name="Professional" label="Professional" enabled="true" visible="false" x="0" y="-380" width="374" height="44"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="44" width="414" height="22">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Number Of Years" name="Number Of Years" label="Number Of Years" enabled="true" visible="true" x="0" y="44" width="414" height="22"/>
+                </XCUIElementTypeOther>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="-72" width="414" height="44">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="-380" width="394" height="1"/>
+                  <XCUIElementTypeButton type="XCUIElementTypeButton" name="checkmark" label="checkmark" enabled="false" visible="false" x="0" y="-380" width="20" height="17"/>
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="1" name="1" label="1" enabled="true" visible="false" x="0" y="-380" width="345" height="44"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="-28" width="414" height="44">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="2" name="2" label="2" enabled="true" visible="false" x="20" y="-28" width="374" height="44"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="15" width="394" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="16" width="414" height="44">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="5" name="5" label="5" enabled="true" visible="false" x="20" y="16" width="374" height="44"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="59" width="394" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="60" width="414" height="44">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="10" name="10" label="10" enabled="true" visible="true" x="20" y="60" width="374" height="44"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="103" width="394" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="104" width="414" height="44">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="15" name="15" label="15" enabled="true" visible="true" x="20" y="104" width="374" height="44"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="147" width="394" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="148" width="414" height="44">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="191" width="414" height="1"/>
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="20" name="20" label="20" enabled="true" visible="true" x="20" y="148" width="374" height="44"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="192" width="414" height="22">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Type Of Occupation" name="Type Of Occupation" label="Type Of Occupation" enabled="true" visible="true" x="0" y="192" width="414" height="22"/>
+                </XCUIElementTypeOther>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="214" width="414" height="44">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="None" name="None" label="None" enabled="true" visible="true" x="20" y="214" width="345" height="44"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="20" y="257" width="394" height="1"/>
+                  <XCUIElementTypeButton type="XCUIElementTypeButton" name="checkmark" label="checkmark" enabled="false" visible="false" x="374" y="227" width="20" height="18"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="258" width="414" height="44">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Private Job" name="Private Job" label="Private Job" enabled="true" visible="true" x="20" y="258" width="374" height="44"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="301" width="394" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="302" width="414" height="44">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Government Job" name="Government Job" label="Government Job" enabled="true" visible="true" x="20" y="302" width="374" height="44"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="345" width="394" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="346" width="414" height="44">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Agricultural" name="Agricultural" label="Agricultural" enabled="true" visible="true" x="20" y="346" width="374" height="44"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="389" width="394" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="390" width="414" height="44">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Business" name="Business" label="Business" enabled="true" visible="true" x="20" y="390" width="374" height="44"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="433" width="394" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="434" width="414" height="44">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Housewife" name="Housewife" label="Housewife" enabled="true" visible="true" x="20" y="434" width="374" height="44"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="477" width="394" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="478" width="414" height="44">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="521" width="414" height="1"/>
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Other" name="Other" label="Other" enabled="true" visible="true" x="20" y="478" width="374" height="44"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="522" width="414" height="22">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Yearly Income" name="Yearly Income" label="Yearly Income" enabled="true" visible="true" x="0" y="522" width="414" height="22"/>
+                </XCUIElementTypeOther>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="544" width="414" height="44">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="500,000" name="500,000" label="500,000" enabled="true" visible="true" x="20" y="544" width="345" height="44"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="20" y="587" width="394" height="1"/>
+                  <XCUIElementTypeButton type="XCUIElementTypeButton" name="checkmark" label="checkmark" enabled="false" visible="false" x="374" y="557" width="20" height="18"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="588" width="414" height="44">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="1,000,000" name="1,000,000" label="1,000,000" enabled="true" visible="true" x="20" y="588" width="374" height="44"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="631" width="394" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="632" width="414" height="44">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="1,500,000" name="1,500,000" label="1,500,000" enabled="true" visible="true" x="20" y="632" width="374" height="44"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="675" width="394" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="676" width="414" height="44">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="2,000,000" name="2,000,000" label="2,000,000" enabled="true" visible="true" x="20" y="676" width="374" height="44"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="719" width="394" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="720" width="414" height="44">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="2,500,000" name="2,500,000" label="2,500,000" enabled="true" visible="true" x="20" y="720" width="374" height="44"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="763" width="394" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="764" width="414" height="44">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="5,000,000" name="5,000,000" label="5,000,000" enabled="true" visible="true" x="20" y="764" width="374" height="44"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="807" width="394" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="808" width="414" height="44">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="More" name="More" label="More" enabled="true" visible="true" x="20" y="808" width="374" height="44"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="851" width="394" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" name="Number Of Years" label="Number Of Years" enabled="true" visible="false" x="0" y="44" width="414" height="22"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" name="Type Of Occupation" label="Type Of Occupation" enabled="true" visible="false" x="0" y="192" width="414" height="22"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" name="Yearly Income" label="Yearly Income" enabled="true" visible="false" x="0" y="522" width="414" height="22"/>
+              </XCUIElementTypeTable>
+              <XCUIElementTypeToolbar type="XCUIElementTypeToolbar" name="Toolbar" enabled="true" visible="true" x="0" y="852" width="414" height="44">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="852" width="414" height="44">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="852" width="414" height="44">
+                    <XCUIElementTypeButton type="XCUIElementTypeButton" name="backButton" label="backButton" enabled="true" visible="true" x="0" y="852" width="69" height="44"/>
+                    <XCUIElementTypeButton type="XCUIElementTypeButton" name="saveButton" label="saveButton" enabled="true" visible="true" x="349" y="852" width="65" height="44"/>
+                  </XCUIElementTypeOther>
+                </XCUIElementTypeOther>
+              </XCUIElementTypeToolbar>
+            </XCUIElementTypeOther>
+          </XCUIElementTypeOther>
+        </XCUIElementTypeOther>
+      </XCUIElementTypeOther>
+    </XCUIElementTypeOther>
+  </XCUIElementTypeWindow>
+  <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="false" x="0" y="0" width="414" height="896">
+    <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="0" width="414" height="896">
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="0" width="414" height="896"/>
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="896" width="414" height="243"/>
+    </XCUIElementTypeOther>
+  </XCUIElementTypeWindow>
+</XCUIElementTypeApplication></AppiumAUT>

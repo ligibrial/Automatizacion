@@ -1,0 +1,84 @@
+import java.text.SimpleDateFormat
+import hudson.tasks.test.AbstractTestResultAction
+
+def dateFormat = new SimpleDateFormat("yyyyMMddHHmm")
+def date = new Date()
+def timestamp = dateFormat.format(date).toString()
+def CORREOS = "jhramirezr@choucairtesting.com";
+
+pipeline{
+	//En el servidor se debe dejar activo el agent con label NodoWindows10Advance, de manera local agent any y el otro comentado
+	agent any
+	//agent
+	//{
+	//	label 'NodoWindows10Advance'
+	//}
+
+	stages{
+		stage('Actualizar fuentes Nodo') {
+		 	steps{
+		 		git url: 'https://vostpmde37.proteccion.com.co:10443/Tester_Choucair/app_transaccional.git', credentialsId: 'JHRAMIRE', branch: 'master'
+			}
+		}
+
+		stage('Test_Junit')
+		{
+			steps{
+				script{
+					try{
+						try{bat "mkdir C:\\AppsProteccion"}catch(ex){}
+						bat "copy ${WORKSPACE}\\src\\test\\resources\\APKs\\AppProteccionPRUEAUT-2.5.2.0_20181018.apk C:\\AppsProteccion"
+						bat ("mvn clean verify serenity:aggregate -P${PERFIL_EJECUCION} -Dwebdriver.driver=appium")
+        				
+        				def myFile = new File("${WORKSPACE}\\target\\site\\serenity\\summary.txt")
+						def error1 = myFile.readLines().get(5).split(":")[1].trim()
+						def error2 = myFile.readLines().get(6).split(":")[1].trim()
+						if(error1.toInteger() > 0 || error2.toInteger() > 0)
+						{
+							throw new Exception("¡¡¡EJECUCIÓN REALIZADA CON FALLOS!!!")
+						}
+						
+						echo 'Ha ejecutado sin fallo test junit'
+						emailext (
+          					subject: "ADVANCE - EJECUCION EXITOSA ESCENARIOS: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
+          					body: """<p><b style="color:MediumSeaGreen;">EJECUCION EXITOSA:</b> Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]':</p>
+            					<p><b>Para verificar el estado de la ejecución ingrese a:</b> &QUOT;<a href='${env.BUILD_URL}'>${env.JOB_NAME} [${env.BUILD_NUMBER}]</a>&QUOT;</p>""",
+         					 to:"${CORREOS}"
+        				)
+					}
+					catch(ex)
+					{
+						emailext (
+          					subject: "ADVANCE - EJECUCION FALLIDA ESCENARIOS: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
+          					body: """<p><b style="color:red;">EJECUCION FALLIDA:</b> Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]':</p>
+            					<p><b>Para verificar el estado de la ejecución ingrese a:</b> &QUOT;<a href='${env.BUILD_URL}'>${env.JOB_NAME} [${env.BUILD_NUMBER}]</a>&QUOT;</p>""",
+         					 to:"${CORREOS}"
+        				)
+
+	    				echo 'Finalizo ejecucion de framework junit con fallos'
+	    				if (currentBuild.result == 'UNSTABLE')
+         						currentBuild.result = 'FAILURE'
+      					throw ex
+					}
+					finally{
+						try{
+							bat "move ${WORKSPACE}\\target\\site\\serenity ${WORKSPACE}\\target\\site\\serenity_${timestamp}"
+		                    echo 'Backup de evidencias realizado con exito'
+		                          
+		                    publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: "${WORKSPACE}/target/site/serenity_${timestamp}", reportFiles: 'index.html', reportName: 'Evidencias Pruebas Aceptacion', reportTitles: ''])
+							echo 'Reporte Html realizado con exito'
+						
+						}
+						catch(e)
+						{
+							echo 'No se realizó el Backup de evidencias'
+			    			publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: "${WORKSPACE}\\target\\site\\serenity", reportFiles: 'index.html', reportName: 'Evidencias Pruebas Aceptacion', reportTitles: ''])
+							echo 'Reporte Html realizado con exito'
+							currentBuild.result='SUCCESS'
+						}
+					}
+				}
+			}
+		}
+	}
+}

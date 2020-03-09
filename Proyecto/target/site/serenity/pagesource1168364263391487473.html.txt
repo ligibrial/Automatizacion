@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><AppiumAUT><XCUIElementTypeApplication type="XCUIElementTypeApplication" name="EriBank" label="EriBank" enabled="true" visible="true" x="0" y="0" width="414" height="896">
+  <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="true" x="0" y="0" width="414" height="896">
+    <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="414" height="896">
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="414" height="896">
+        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="414" height="896">
+          <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="414" height="896">
+            <XCUIElementTypeOther type="XCUIElementTypeOther" name="makePaymentView" label="makePaymentView" enabled="true" visible="true" x="0" y="0" width="414" height="896">
+              <XCUIElementTypeScrollView type="XCUIElementTypeScrollView" name="scrollView" label="scrollView" enabled="true" visible="true" x="0" y="-10" width="414" height="916">
+                <XCUIElementTypeImage type="XCUIElementTypeImage" name="logo.png" enabled="true" visible="false" x="45" y="54" width="322" height="70"/>
+                <XCUIElementTypeTextField type="XCUIElementTypeTextField" value="Phone" name="phoneTextField" label="phoneTextField" enabled="true" visible="true" x="19" y="137" width="375" height="31"/>
+                <XCUIElementTypeTextField type="XCUIElementTypeTextField" value="Name" name="nameTextField" label="nameTextField" enabled="true" visible="true" x="19" y="176" width="374" height="31"/>
+                <XCUIElementTypeTextField type="XCUIElementTypeTextField" value="Amount" name="amountTextField" label="amountTextField" enabled="true" visible="true" x="19" y="215" width="376" height="31"/>
+                <XCUIElementTypeTextField type="XCUIElementTypeTextField" value="Country" name="countryTextField" label="countryTextField" enabled="true" visible="true" x="19" y="254" width="266" height="31"/>
+                <XCUIElementTypeButton type="XCUIElementTypeButton" name="countryButton" label="countryButton" enabled="true" visible="true" x="304" y="254" width="91" height="32">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Select" name="Select" label="Select" enabled="true" visible="true" x="326" y="261" width="47" height="18"/>
+                </XCUIElementTypeButton>
+                <XCUIElementTypeButton type="XCUIElementTypeButton" name="sendPaymentButton" label="sendPaymentButton" enabled="false" visible="true" x="60" y="295" width="294" height="44">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Send Payment" name="Send Payment" label="Send Payment" enabled="true" visible="true" x="154" y="308" width="106" height="18"/>
+                </XCUIElementTypeButton>
+                <XCUIElementTypeButton type="XCUIElementTypeButton" name="cancelButton" label="cancelButton" enabled="true" visible="true" x="60" y="346" width="294" height="44">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Cancel" name="Cancel" label="Cancel" enabled="true" visible="true" x="181" y="359" width="52" height="18"/>
+                </XCUIElementTypeButton>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" value="0 %" name="Vertical scroll bar, 2 pages" label="Vertical scroll bar, 2 pages" enabled="true" visible="true" x="381" y="34" width="30" height="827"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" value="0 %" name="Horizontal scroll bar, 1 page" label="Horizontal scroll bar, 1 page" enabled="true" visible="true" x="35" y="839" width="344" height="30"/>
+              </XCUIElementTypeScrollView>
+            </XCUIElementTypeOther>
+          </XCUIElementTypeOther>
+        </XCUIElementTypeOther>
+      </XCUIElementTypeOther>
+    </XCUIElementTypeOther>
+  </XCUIElementTypeWindow>
+  <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="false" x="0" y="0" width="414" height="896">
+    <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="0" width="414" height="896">
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="0" width="414" height="896"/>
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="896" width="414" height="243"/>
+    </XCUIElementTypeOther>
+  </XCUIElementTypeWindow>
+</XCUIElementTypeApplication></AppiumAUT>

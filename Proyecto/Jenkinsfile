@@ -1,0 +1,91 @@
+pipeline{
+	agent any
+	stages{
+		stage('Actualizar Proyecto Git') {
+		 	steps{
+		 		checkout([$class: 'GitSCM', branches: [[name: '*/master']], 
+		 			doGenerateSubmoduleConfigurations: false, extensions: [], 
+		 			submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/apulido15/automatizacionMovil.git']]])
+			}
+		}
+		stage('Sonar Scanner'){
+		    steps{
+		    	script{
+		    		catchError{
+		    			bat ('sonar-scanner')
+		    		}
+		    	}
+		    }
+		}
+		stage('Configuracion Ambiente Ejecucion'){
+			steps{
+				script{
+					echo 'Lanzar Appium'
+					bat ('call start cmd.exe /k %NODE_HOME% %APPIUM_HOME% --address 127.0.0.1 --port 4723')
+				}
+			}
+		}
+		stage('Ejecucion Automatizacion Movil'){
+			steps{
+				script{
+					catchError{
+						String nav = "${NAVEGADOR}"
+						String comando = "mvn clean test serenity:aggregate "
+						if(nav.equals("android") || nav.equals("ios")){
+							 comando += "-Dwebdriver.driver=appium -Dwebdriver.base.url=${AMBIENTE} -P${PERFIL}"
+							 comando += " -Dappium.platformVersion=${VERSION} -Dappium.udid=${UDID} -Dappium.hub=${HUB}"
+							 comando += " -Dappium.deviceName=${DEVICE_NAME}"
+							 comando += nav.equals("android") ? " -Dappium.browserName=chrome" : " -Dappium.browserName=safari"
+							 comando += nav.equals("android") ? " -Dappium.automationName=uiautomator2" : " -Dappium.automationName=XCuiTest"
+							 comando += nav.equals("android") ? " -Dappium.platformName=android" : " -Dappium.platformName=ios"
+							 comando += nav.equals("android") ? " -Dappium.chromedriverExecutable=${RUTA_DRIVER}" : ""
+						}
+						else{
+							 comando += "-Dwebdriver.driver=${NAVEGADOR} -Dwebdriver.base.url=${AMBIENTE} -P${PERFIL}"
+						}
+						echo 'Comando Maven: ' + comando
+						sh (comando)
+					
+					
+					
+					
+						String rutaApp = "${WORKSPACE}\\src\\test\\resources\\Apps\\ExperiBank.apk"
+						rutaApp = "mvn clean verify serenity:aggregate -Dwebdriver.driver=appium -Dappium.app=" + rutaApp
+						echo 'Comando Maven: ' + rutaApp
+						bat (rutaApp)
+		        				
+		        		def myFile = new File("${WORKSPACE}\\target\\site\\serenity\\summary.txt")
+						def error1 = myFile.readLines().get(5).split(":")[1].trim()
+						def error2 = myFile.readLines().get(6).split(":")[1].trim()
+						if(error1.toInteger() > 0 || error2.toInteger() > 0)
+						{
+							throw new Exception("¡¡¡EJECUCIÓN REALIZADA CON FALLOS!!!")
+						}	
+						echo 'Ejecución Exitosa'
+					}
+				}
+			}
+		}
+		stage('Backup Evidencias'){
+			steps{
+				script{
+					String fecha = "${BUILD_TIMESTAMP}"
+					fecha = fecha.trim().replace(":","-")
+					fileOperations([fileZipOperation("${WORKSPACE}\\target\\site\\serenity")])
+					fileOperations([fileRenameOperation(destination: "D:\\Moviles\\Buckups\\serenity_" + fecha + ".zip", 
+						source: "${WORKSPACE}\\serenity.zip")])
+				}
+			}
+		}
+		stage('HTML Publisher'){
+			steps{
+				script{
+					echo "${WORKSPACE}\\target\\site\\serenity"
+					publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, 
+						reportDir: "${WORKSPACE}\\target\\site\\serenity", reportFiles: 'index.html', 
+						reportName: 'EvidenciasAutomatizacionMovil', reportTitles: 'Serenty BDD Report'])
+				}
+			}
+		}
+	}	
+}
