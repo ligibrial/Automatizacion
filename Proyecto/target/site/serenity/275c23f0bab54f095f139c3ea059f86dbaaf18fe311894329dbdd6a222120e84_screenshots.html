@@ -135,7 +135,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 09-03-2020 09:47</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 12-03-2020 15:58</span>
     <br style="clear:left"/>
 </div>
 
@@ -176,9 +176,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
-                                <span class="failing-color">Realizar hipoteca exitoso
+                                <span class="success-color">Realizar hipoteca exitoso
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -194,59 +194,36 @@
 
     <div class="story-title">
         <h3>Scenario:</h3>
-        <div class="scenario">Given Iniciar App Eribank<br>And Iniciar Sesion Exitosa &lt;Usuario&gt; &lt;Contrasena&gt;<br>And Verificar Acceso App &lt;Mensaje&gt;<br>When Ingreso a la opcion Mortgage Request<br>And diligencio formulario Mort &lt;Nombre&gt;&lt;Apellido&gt;&lt;Edad&gt;&lt;Direccion1&gt;&lt;Direccion2&gt;<br>And Seleccionar country &lt;Pais&gt;<br>And diligenciar el formulario next &lt;Loan&gt;&lt;Years&gt;&lt;Occupation&gt;&lt;Income&gt;<br>Then Realizar hipoteca exitoso</div>
+        <div class="scenario">Given Usuario ingresa a la app Eribank<br>And Inicia Sesion Exitosa &lt;Usuario&gt; &lt;Contrasena&gt;<br>And Verifica el Acceso App &lt;Mensaje&gt;<br>When El usuario hace la solicitud de hipoteca<br>And Diligencia los datos de la solicitud hipoteca &lt;Nombre&gt;&lt;Apellido&gt;&lt;Edad&gt;&lt;Direccion1&gt;&lt;Direccion2&gt;<br>And Selecciona ubicacion para realizar solicitud &lt;Pais&gt;<br>And Selecciona los datos de la solicitud hipoteca &lt;Loan&gt;&lt;Years&gt;&lt;Occupation&gt;&lt;Income&gt;<br>Then Verifica la solicitud exitosa</div>
     </div>
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
-            <div class="screenshotFailure panel panel-danger">
-
-    <div style="display:block">
-        <div class="table">
-            <div class="row">
-                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Assertion error: Your balance is:</span>
-                </div>
-                <div class="col-sm-2">
-                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
-                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
-                </div>
-             </div>
-        </div>
-    <div>
-
-    <!-- Details Section -->
-    <div class="row stacktrace-details">
-      <div class="col">
-        <div class="collapse multi-collapse" id="stacktraceModal-overall">
-            <div class="card">
-                <div class="card-header">
-                    <h4>java.lang.AssertionError </h4>
-                </div>
-                <div class="card-body">
-                    <div>
-                        <pre>com.choucair.moviles.app.steps.LoginSteps.verificarAccesoApp(LoginSteps.java:26)<br />com.choucair.moviles.app.definitions.LoginDefinitions.verificarAccesoApp(LoginDefinitions.java:28)<br />✽.Verificar Acceso App "Your balance is: "(src/test/resources/features/MortagageRequest/MortgageRequest.feature:10)<br /></pre>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-                <div class="panel-body">
-                    <a href="pagesource3966428611527271482.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
-                </div>
-            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="6c6667328c59e8c3f1bb893ac28bea57f61d345aa4d6ecc4c22fdd091735e901.png" title=" Example: {Usuario=&quot;company&quot;, Contrasena=&quot;company&quot;, Mensaje=&quot;Your balance is: &quot;, Phone=&quot;777&quot;, Name=&quot;nombre&quot;, Amount=&quot;500&quot;, Nombre=&quot;juan&quot;, Apellido=&quot;rodrig&quot;, Edad=&quot;12&quot;, Direccion1=&quot;calle1&quot;, Direccion2=&quot;calle2&quot;, Pais=&quot;Argentina&quot;, Loan=&quot;Car&quot;, Years=&quot;15&quot;, Occupation=&quot;Agricultural&quot;, Income=&quot;1,000,000&quot;}" width="828"/>
-                <img src="6c6667328c59e8c3f1bb893ac28bea57f61d345aa4d6ecc4c22fdd091735e901.png" title=" And Iniciar Sesion Exitosa &quot;company&quot; &quot;company&quot;" width="828"/>
-                <img src="6c6667328c59e8c3f1bb893ac28bea57f61d345aa4d6ecc4c22fdd091735e901.png" title=" Iniciar sesion exitosa: company, company" width="828"/>
-                <img src="5f3ae777912843fa1b0f8cec2917c22d7fe9519e82ece5c53ea8b4481254b5df.png" title=" Iniciar sesion exitosa: company, company" width="828"/>
-                <img src="6e95a968a6dd6541f314970b60190f9ee834ff23d350b6823fe5e6723a911a17.png" title=" Iniciar sesion exitosa: company, company (completed)" width="828"/>
-                <img src="c6a1a0c1f7c0610afb22df9e361039bf57ca4265dba5454d6e96e91057b55199.png" title=" And Verificar Acceso App &quot;Your balance is: &quot;" width="828"/>
-                <img src="c6a1a0c1f7c0610afb22df9e361039bf57ca4265dba5454d6e96e91057b55199.png" title=" verificar el inicio correcto se sesi&oacute;n: <span class='failing-color'>FAILURE</span>" width="828"/>
+                <img src="a41efd1679d84cda3b138e38c3b24bf3a4aef1f4f723121f9b44d2ef2fc1baaf.png" title=" Example: {Usuario=&quot;company&quot;, Contrasena=&quot;company&quot;, Mensaje=&quot;Your balance is: &quot;, Phone=&quot;777&quot;, Name=&quot;nombre&quot;, Amount=&quot;500&quot;, Nombre=&quot;juan&quot;, Apellido=&quot;rodrig&quot;, Edad=&quot;12&quot;, Direccion1=&quot;calle1&quot;, Direccion2=&quot;calle2&quot;, Pais=&quot;Argentina&quot;, Loan=&quot;Car&quot;, Years=&quot;15&quot;, Occupation=&quot;Agricultural&quot;, Income=&quot;500,000&quot;}" width="828"/>
+                <img src="a41efd1679d84cda3b138e38c3b24bf3a4aef1f4f723121f9b44d2ef2fc1baaf.png" title=" And Inicia Sesion Exitosa &quot;company&quot; &quot;company&quot;" width="828"/>
+                <img src="a41efd1679d84cda3b138e38c3b24bf3a4aef1f4f723121f9b44d2ef2fc1baaf.png" title=" Iniciar sesion exitosa: company, company" width="828"/>
+                <img src="eccd1aad47b2265c9d7ffb4fd5ad5601f66af481de9b20876e6e88b1ef104f68.png" title=" Iniciar sesion exitosa: company, company" width="828"/>
+                <img src="5406d1dc3b58b5138cffa0425886f670a1eb03c7bc83ce629a02a3437fec3232.png" title=" Iniciar sesion exitosa: company, company (completed)" width="828"/>
+                <img src="8939a30295e8f0b8b0110e25d4c5b74caa44616b23341a5c08eea195365bcd17.png" title=" When El usuario hace la solicitud de hipoteca" width="828"/>
+                <img src="8939a30295e8f0b8b0110e25d4c5b74caa44616b23341a5c08eea195365bcd17.png" title=" Ingreso a la opcion mortgage request" width="828"/>
+                <img src="6354f1c9a5de4f1635471cdee5661cf78e538768e19979350987042afe930101.png" title=" And Diligencia los datos de la solicitud hipoteca &quot;juan&quot;&quot;rodrig&quot;&quot;12&quot;&quot;calle1&quot;&quot;calle2&quot;" width="828"/>
+                <img src="6354f1c9a5de4f1635471cdee5661cf78e538768e19979350987042afe930101.png" title=" Diligencio formulario mort: juan, rodrig, 12, calle1, calle2" width="828"/>
+                <img src="9fed98ac5e24b5f874b713b7bbf7768a1a277b2ed7a2e8195c3d9308681130c2.png" title=" Diligencio formulario mort: juan, rodrig, 12, calle1, calle2" width="828"/>
+                <img src="df10543c596e1e61df015316e1f1ee5a45ecd938add9b1c7e83d5758b424b019.png" title=" Diligencio formulario mort: juan, rodrig, 12, calle1, calle2" width="828"/>
+                <img src="9facab350196ce533c02a94aa2d61b54d04b0680050461c2bf50b825a5de77b7.png" title=" Diligencio formulario mort: juan, rodrig, 12, calle1, calle2" width="828"/>
+                <img src="a3a0c5e056aad2a63723f4d03205ffe0b5d4a63f22b3fa0084b1764b10bd6ab2.png" title=" Diligencio formulario mort: juan, rodrig, 12, calle1, calle2 (completed)" width="828"/>
+                <img src="d2b1e42e83b33992d74f09787572eefaafa8f0196fcd2b7a358f7517c3fa0157.png" title=" And Selecciona ubicacion para realizar solicitud &quot;Argentina&quot;" width="828"/>
+                <img src="d2b1e42e83b33992d74f09787572eefaafa8f0196fcd2b7a358f7517c3fa0157.png" title=" Seleccionar country: Argentina" width="828"/>
+                <img src="a7916db0c72cd8c10db576ff7fce93e79fa6b5df16f7564d92d05a416399d6db.png" title=" And Selecciona los datos de la solicitud hipoteca &quot;Car&quot;&quot;15&quot;&quot;Agricultural&quot;&quot;500,000&quot;" width="828"/>
+                <img src="a7916db0c72cd8c10db576ff7fce93e79fa6b5df16f7564d92d05a416399d6db.png" title=" Diligenciar el formulario next: Car, 15, Agricultural, 500,000" width="828"/>
+                <img src="ca0a72821d01d64b23ac89d5b9b287a910fcb72d952673175dcd9ab67647cfaf.png" title=" Diligenciar el formulario next: Car, 15, Agricultural, 500,000" width="828"/>
+                <img src="c8f9daa7d152fe9ff8e17cd6b6e24dd71b223024c56f19ab2eb1158f6cb4da1f.png" title=" Diligenciar el formulario next: Car, 15, Agricultural, 500,000" width="828"/>
+                <img src="c8f9daa7d152fe9ff8e17cd6b6e24dd71b223024c56f19ab2eb1158f6cb4da1f.png" title=" Diligenciar el formulario next: Car, 15, Agricultural, 500,000" width="828"/>
+                <img src="df2c6890ec6ef654205879e7ba1d9f572af66eb46f244b0c7d43fb868005ce18.png" title=" Diligenciar el formulario next: Car, 15, Agricultural, 500,000 (completed)" width="828"/>
+                <img src="b6e3c25a2b05301c81886b5763027efc6a84fb6e7f31ab335fb1334e72fdd391.png" title=" Then Verifica la solicitud exitosa" width="828"/>
+                <img src="b6e3c25a2b05301c81886b5763027efc6a84fb6e7f31ab335fb1334e72fdd391.png" title=" Realizar hipoteca exitoso: <span class='success-color'>SUCCESS</span>" width="828"/>
             </div>
         </div>
 

@@ -37,7 +37,7 @@ public class ExpenseReportObject extends MobilePageObject{
 	public void verificar() {
 		if(accionesObjetosExpense.isAndroid()) {
 		 List<WebElement> tabList = getDriver().findElements(By.className("android.widget.TextView"));
-		 int num=tabList.size()-1;
+	
 		
 		 for (WebElement e : tabList) {
 			 e.getText();
@@ -49,7 +49,7 @@ public class ExpenseReportObject extends MobilePageObject{
 		}else {
 			
 		 List<WebElement> tabList = getDriver().findElements(By.className("XCUIElementTypeStaticText"));
-		 int num=tabList.size()-1;
+	
 		 for (WebElement e : tabList) {
 			 e.getText();
 			 if(e.getText().contains("Expense")){

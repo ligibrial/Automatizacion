@@ -7,16 +7,19 @@ import net.thucydides.core.annotations.Steps;
 public class LogoutDefinitions {
 	@Steps
 	LogoutSteps logoutSteps;
-	@When("^Seleccionar Salir$")
-	public void seleccionarSalir() {
-    logoutSteps.seleccionarSalir();
+		
+		@When("^El usuario sale de la app$")
+		public void elUsuarioSaleDeLaApp() {
+		    // Write code here that turns the phrase above into concrete actions
+			 logoutSteps.seleccionarSalir();
+		}
+		
+		@Then("^verifica salida exitosa$")
+		public void verificaSalidaExitosa() {
+		 
+		}
+		
 
-	}
-
-	@Then("^Salir exitosamente$")
-	public void salirExitosamente() {
-	  
-	}
 
 
 }

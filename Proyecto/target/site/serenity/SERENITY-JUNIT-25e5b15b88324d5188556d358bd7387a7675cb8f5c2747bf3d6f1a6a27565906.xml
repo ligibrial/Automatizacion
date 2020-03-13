@@ -1,5 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Realizar una hipoteca" skipped="1" tests="2" time="43.66" timestamp="2020-03-09 09:47:14"><testcase name="Realizar hipoteca"><skipped/></testcase><testcase name="Realizar hipoteca exitoso"><failure message="Your balance is: " type="java.lang.AssertionError">Your balance is: </failure><system-err>Your balance is: &#13;
-com.choucair.moviles.app.steps.LoginSteps.verificarAccesoApp(LoginSteps.java:26)&#13;
-com.choucair.moviles.app.definitions.LoginDefinitions.verificarAccesoApp(LoginDefinitions.java:28)&#13;
-✽.Verificar Acceso App "Your balance is: "(src/test/resources/features/MortagageRequest/MortgageRequest.feature:10)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Realizar una hipoteca" skipped="1" tests="2" time="240.88" timestamp="2020-03-12 03:58:41"><testcase name="Realizar hipoteca"><skipped/></testcase><testcase name="Realizar hipoteca exitoso"/></testsuite>

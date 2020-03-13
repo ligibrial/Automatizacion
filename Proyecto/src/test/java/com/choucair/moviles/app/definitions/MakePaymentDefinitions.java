@@ -6,30 +6,29 @@ import net.thucydides.core.annotations.Steps;
 
 
 public class MakePaymentDefinitions {
-@Steps
-MakePaymentSteps makePaymentSteps;
-
-@When("^Ingreso a la opcion de pago$")
-public void ingresoALaOpcionDePago() {
-	makePaymentSteps.ingresoALaOpcionDePago();
-}
-
-@When("^Diligenciar el formulario de pago \"([^\"]*)\"\"([^\"]*)\"\"([^\"]*)\"$")
-public void diligenciarElFormularioDePago(String ph, String nm, String amt) {
-	makePaymentSteps.diligenciarElFormularioDePago(ph, nm, amt);
-}
-
-@When("^Seleccionar Pais \"([^\"]*)\"$")
-public void seleccionarPais(String cty) throws InterruptedException  {
-   
-
-	makePaymentSteps.seleccionarPais(cty);
-}
-
-@Then("^Realizar pago exitoso$")
-public void realizarPagoExitoso() {
-  
-}
-
+		
+	    @Steps
+		MakePaymentSteps makePaymentSteps;
+		
+		@When("^Realiza el pago$")
+		public void realizaElPago() {
+			makePaymentSteps.ingresoALaOpcionDePago();
+		}
+		
+		@When("^Diligencia los datos de pago \"([^\"]*)\"\"([^\"]*)\"\"([^\"]*)\"$")
+		public void diligenciaLosDatosDePago(String ph, String nm, String amt) {
+			makePaymentSteps.diligenciarElFormularioDePago(ph, nm, amt);
+		}
+		
+		@When("^Selecciona la ubicación de envio  \"([^\"]*)\"$")
+		public void seleccionaLaUbicaciónDeEnvio(String cty) throws InterruptedException {
+			makePaymentSteps.seleccionarPais(cty);
+		}
+		
+		@Then("^Realiza pago exitoso$")
+		public void realizaPagoExitoso() {
+         makePaymentSteps.realizarPagoExitoso();
+	   
+		}
 	
 }

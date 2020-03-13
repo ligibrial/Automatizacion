@@ -7,24 +7,24 @@ import net.thucydides.core.annotations.Steps;
 
 public class LoginDefinitions{
 	
+	
 	@Steps
 	LoginSteps loginSteps;
 	
-	@Given("^Iniciar App Eribank$")
-	public void iniciarAppEribank()
-	{
+	@Given("^Usuario ingresa a la app Eribank$")
+	public void iniciarAppEribank() {
 		loginSteps.iniciarAppEribank();
 	}
 	
-	@When("^Iniciar Sesion Exitosa \"([^\"]*)\" \"([^\"]*)\"$")
-	public void iniciarSesionExitosa(String usu,String pass)
-	{
+	@When("^Inicia Sesion Exitosa \"([^\"]*)\" \"([^\"]*)\"$")
+	public void iniciaSesionExitosa(String usu, String pass) {
 		loginSteps.iniciarSesionExitosa(usu, pass);
 	}
 	
-	@Then("^Verificar Acceso App \"([^\"]*)\"$")
-	public void verificarAccesoApp(String mensaje)
-	{
-		loginSteps.verificarAccesoApp(mensaje);
+	@Then("^Verifica el Acceso App \"([^\"]*)\"$")
+	public void verificaElAccesoApp(String mensaje) {
+		loginSteps.verificaElAccesoApp(mensaje);
 	}
+
+
 }

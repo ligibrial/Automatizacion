@@ -10,10 +10,13 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @CucumberOptions(
 features = "src/test/resources/features"
-,tags = {"@MakePayment"}
+,tags = {"@MortgageRequest"}
 ,snippets = SnippetType.CAMELCASE
 ,glue = "com.choucair.moviles.app.definitions")
 
 @RunWith(CucumberWithSerenity.class)
 public class RunnerCucumber {
+	
+	
+	
 }

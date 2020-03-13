@@ -33,8 +33,10 @@ public class MakePaymentSteps {
 	}
 	@Step
 	public void realizarPagoExitoso() {
-	
-
+		makePaymentObjet.enviarSolicitud();
+		makePaymentObjet.clickBotonYes();
+		
+		
 	}
 
 }

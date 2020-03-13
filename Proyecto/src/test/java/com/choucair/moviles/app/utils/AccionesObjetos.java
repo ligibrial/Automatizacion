@@ -1,11 +1,8 @@
 package com.choucair.moviles.app.utils;
-
 import java.time.Duration;
-import java.util.HashMap;
 import java.util.List;
 import java.util.logging.Logger;
-
-import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -20,7 +17,6 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
-import io.appium.java_client.android.nativekey.PressesKey;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
@@ -71,10 +67,7 @@ public class AccionesObjetos extends MobilePageObject
 			//hideKeyboard();
 			Serenity.takeScreenshot();
 		}
-		
-		
-		
-		
+			
 	
 	}
 	
@@ -100,42 +93,34 @@ public class AccionesObjetos extends MobilePageObject
 	public void selecctScroll(String param) {
 		 WebElement element1 = (MobileElement) getDriver().findElement(MobileBy.AndroidUIAutomator(
 				 "new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text(\""+param+"\").instance(0))"));
-					element1.click();
+		 clickObjeto(esperarObtenerObjetos(element1));	
 	}
 	/***
 	 * selecciona valor haciendo scroll IOs
 	 * @param param valor a buscar
 	 */
-	public void selectScrollIos(String param, String dr) {
+	
+	
+	
+	
+
+	
+	private void verticalSwipe() {
+		// TODO Auto-generated method stub
 		
-		JavascriptExecutor js =(JavascriptExecutor)getDriver();
-		HashMap<String, String> scrollObject = new HashMap<>();
-		if (dr.equals("up")) {
-			
-			scrollObject.put("predicateString", "value== '"+param+"'");
-			scrollObject.put("direction", "up");
-			scrollObject.values();
-			js.executeScript("mobile: scroll", scrollObject);
-			//getDriver().findElement(org.openqa.selenium.By.xpath("//*[@value='"+ param +"']")).click();
-		    getIosDriver().findElementByIosNsPredicate("value== '"+param+"'").click();
-        } else if (dr.equals("down")) {
-        	
-            scrollObject.put("predicateString", "value== '"+param+"'");
-        	scrollObject.put("direction", "down");
-        	scrollObject.values();
-			js.executeScript("mobile: scroll", scrollObject);
-			//getDriver().findElement(org.openqa.selenium.By.xpath("//*[@value='"+ param +"']")).click();
-		    getIosDriver().findElementByIosNsPredicate("value== '"+param+"'").click();
-        }
-        	
-            
-            
-		
-		
-	    
+		Dimension dim = (getDriver().manage().window().getSize());
+		System.out.println("la dimension es"+dim);
+		   int height=dim.getHeight();
+		   int width= dim.getWidth();
+		   int x = width/2;
+		   int starty= (int)(height*0.80);
+	       int endy= (int)(height*0.20);
+	      
+	      swipe(x, starty, x, endy);
+       
 		
 	}
-	
+
 	/***
 	 * Metodo para encontrar un objeto esperando un tiempo maximo determinado, 30seg
 	 * @param pro propiedad por el cual será buscado id, class, xpath

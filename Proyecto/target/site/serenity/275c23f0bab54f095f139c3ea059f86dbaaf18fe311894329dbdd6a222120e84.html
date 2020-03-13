@@ -106,7 +106,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 09-03-2020 09:47</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 12-03-2020 15:58</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -146,9 +146,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
-                                <span class="failing-color">
+                                <span class="success-color">
                                     Realizar hipoteca exitoso
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -169,7 +169,7 @@
         <div class="story-title">
             <h3 class="story-header">Scenario Outline</h3>
 
-            <div class="scenario">Given Iniciar App Eribank<br>And Iniciar Sesion Exitosa &lt;Usuario&gt; &lt;Contrasena&gt;<br>And Verificar Acceso App &lt;Mensaje&gt;<br>When Ingreso a la opcion Mortgage Request<br>And diligencio formulario Mort &lt;Nombre&gt;&lt;Apellido&gt;&lt;Edad&gt;&lt;Direccion1&gt;&lt;Direccion2&gt;<br>And Seleccionar country &lt;Pais&gt;<br>And diligenciar el formulario next &lt;Loan&gt;&lt;Years&gt;&lt;Occupation&gt;&lt;Income&gt;<br>Then Realizar hipoteca exitoso</div>
+            <div class="scenario">Given Usuario ingresa a la app Eribank<br>And Inicia Sesion Exitosa &lt;Usuario&gt; &lt;Contrasena&gt;<br>And Verifica el Acceso App &lt;Mensaje&gt;<br>When El usuario hace la solicitud de hipoteca<br>And Diligencia los datos de la solicitud hipoteca &lt;Nombre&gt;&lt;Apellido&gt;&lt;Edad&gt;&lt;Direccion1&gt;&lt;Direccion2&gt;<br>And Selecciona ubicacion para realizar solicitud &lt;Pais&gt;<br>And Selecciona los datos de la solicitud hipoteca &lt;Loan&gt;&lt;Years&gt;&lt;Occupation&gt;&lt;Income&gt;<br>Then Verifica la solicitud exitosa</div>
 
         </div>
 
@@ -207,54 +207,54 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="test-FAILURE"><a href="#0">1</a></td>
-                                <td class="test-FAILURE"><a
+                            <td class="test-SUCCESS"><a href="#0">1</a></td>
+                                <td class="test-SUCCESS"><a
                                             href="#0">"company"</a>
                                 </td>
-                                <td class="test-FAILURE"><a
+                                <td class="test-SUCCESS"><a
                                             href="#0">"company"</a>
                                 </td>
-                                <td class="test-FAILURE"><a
+                                <td class="test-SUCCESS"><a
                                             href="#0">"Your balance is: "</a>
                                 </td>
-                                <td class="test-FAILURE"><a
+                                <td class="test-SUCCESS"><a
                                             href="#0">"777"</a>
                                 </td>
-                                <td class="test-FAILURE"><a
+                                <td class="test-SUCCESS"><a
                                             href="#0">"nombre"</a>
                                 </td>
-                                <td class="test-FAILURE"><a
+                                <td class="test-SUCCESS"><a
                                             href="#0">"500"</a>
                                 </td>
-                                <td class="test-FAILURE"><a
+                                <td class="test-SUCCESS"><a
                                             href="#0">"juan"</a>
                                 </td>
-                                <td class="test-FAILURE"><a
+                                <td class="test-SUCCESS"><a
                                             href="#0">"rodrig"</a>
                                 </td>
-                                <td class="test-FAILURE"><a
+                                <td class="test-SUCCESS"><a
                                             href="#0">"12"</a>
                                 </td>
-                                <td class="test-FAILURE"><a
+                                <td class="test-SUCCESS"><a
                                             href="#0">"calle1"</a>
                                 </td>
-                                <td class="test-FAILURE"><a
+                                <td class="test-SUCCESS"><a
                                             href="#0">"calle2"</a>
                                 </td>
-                                <td class="test-FAILURE"><a
+                                <td class="test-SUCCESS"><a
                                             href="#0">"Argentina"</a>
                                 </td>
-                                <td class="test-FAILURE"><a
+                                <td class="test-SUCCESS"><a
                                             href="#0">"Car"</a>
                                 </td>
-                                <td class="test-FAILURE"><a
+                                <td class="test-SUCCESS"><a
                                             href="#0">"15"</a>
                                 </td>
-                                <td class="test-FAILURE"><a
+                                <td class="test-SUCCESS"><a
                                             href="#0">"Agricultural"</a>
                                 </td>
-                                <td class="test-FAILURE"><a
-                                            href="#0">"1,000,000"</a>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">"500,000"</a>
                                 </td>
                         </tr>
                     </tbody>
@@ -278,12 +278,12 @@
                 <tr class="step-table-separator">
                     <td colspan="5"></td>
                 </tr>
-                <tr class="test-FAILURE">
+                <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
                         <a name="0"/>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block">
-                                <i class="fa fa-plus-square-o imgstepSection0 failure-icon"
+                                <i class="fa fa-plus-square-o imgstepSection0 success-icon"
                                    style="margin-left: 20px; float:left;  padding-right:5px"></i>
                             </a>
                     </td>
@@ -292,31 +292,31 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block;">
                                 <span class="top-level-step">
-                                Example: {Usuario="company", Contrasena="company", Mensaje="Your balance is: ", Phone="777", Name="nombre", Amount="500", Nombre="juan", Apellido="rodrig", Edad="12", Direccion1="calle1", Direccion2="calle2", Pais="Argentina", Loan="Car", Years="15", Occupation="Agricultural", Income="1,000,000"}
+                                Example: {Usuario="company", Contrasena="company", Mensaje="Your balance is: ", Phone="777", Name="nombre", Amount="500", Nombre="juan", Apellido="rodrig", Edad="12", Direccion1="calle1", Direccion2="calle2", Pais="Argentina", Loan="Car", Years="15", Occupation="Agricultural", Income="500,000"}
                             </span>
                             </a>
                             <span class="evidence">
                             </span>
                         </div>
                     </td>
-                        <td width="160" class="FAILURE-text">
+                        <td width="160" class="SUCCESS-text">
                                 <a href="275c23f0bab54f095f139c3ea059f86dbaaf18fe311894329dbdd6a222120e84_screenshots.html#screenshots?screenshot=0">
-                                    <img src="6c6667328c59e8c3f1bb893ac28bea57f61d345aa4d6ecc4c22fdd091735e901.png"
-                                         href="6c6667328c59e8c3f1bb893ac28bea57f61d345aa4d6ecc4c22fdd091735e901.png"
+                                    <img src="a41efd1679d84cda3b138e38c3b24bf3a4aef1f4f723121f9b44d2ef2fc1baaf.png"
+                                         href="a41efd1679d84cda3b138e38c3b24bf3a4aef1f4f723121f9b44d2ef2fc1baaf.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                                 <i class="fas fa-arrow-right"></i>
 
-                                <a href="275c23f0bab54f095f139c3ea059f86dbaaf18fe311894329dbdd6a222120e84_screenshots.html#screenshots?screenshot=7">
-                                    <img src="c6a1a0c1f7c0610afb22df9e361039bf57ca4265dba5454d6e96e91057b55199.png"
-                                         href="c6a1a0c1f7c0610afb22df9e361039bf57ca4265dba5454d6e96e91057b55199.png"
+                                <a href="275c23f0bab54f095f139c3ea059f86dbaaf18fe311894329dbdd6a222120e84_screenshots.html#screenshots?screenshot=24">
+                                    <img src="b6e3c25a2b05301c81886b5763027efc6a84fb6e7f31ab335fb1334e72fdd391.png"
+                                         href="b6e3c25a2b05301c81886b5763027efc6a84fb6e7f31ab335fb1334e72fdd391.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
-                    <td width="100"><span class="top-level-step">FAILURE</span></td>
-                    <td width="100"><span class="top-level-step">42.43s</span></td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">239.58s</span></td>
                 </tr>
                 <tr>
                     <td colspan="5">
@@ -336,7 +336,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0')"
                                style="display:block;">
                                 <span class="nested-step">
-                                Given Iniciar App Eribank
+                                Given Usuario ingresa a la app Eribank
                             </span>
                             </a>
                             <span class="evidence">
@@ -347,7 +347,7 @@
 
                         </td>
                     <td width="100"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">8.45s</span></td>
+                    <td width="100"><span class="nested-step">26.45s</span></td>
                 </tr>
                 <tr>
                     <td colspan="5">
@@ -392,7 +392,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1')"
                                style="display:block;">
                                 <span class="nested-step">
-                                And Iniciar Sesion Exitosa "company" "company"
+                                And Inicia Sesion Exitosa "company" "company"
                             </span>
                             </a>
                             <span class="evidence">
@@ -401,22 +401,22 @@
                     </td>
                         <td width="160" class="SUCCESS-text">
                                 <a href="275c23f0bab54f095f139c3ea059f86dbaaf18fe311894329dbdd6a222120e84_screenshots.html#screenshots?screenshot=1">
-                                    <img src="6c6667328c59e8c3f1bb893ac28bea57f61d345aa4d6ecc4c22fdd091735e901.png"
-                                         href="6c6667328c59e8c3f1bb893ac28bea57f61d345aa4d6ecc4c22fdd091735e901.png"
+                                    <img src="a41efd1679d84cda3b138e38c3b24bf3a4aef1f4f723121f9b44d2ef2fc1baaf.png"
+                                         href="a41efd1679d84cda3b138e38c3b24bf3a4aef1f4f723121f9b44d2ef2fc1baaf.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                                 <i class="fas fa-arrow-right"></i>
 
                                 <a href="275c23f0bab54f095f139c3ea059f86dbaaf18fe311894329dbdd6a222120e84_screenshots.html#screenshots?screenshot=4">
-                                    <img src="6e95a968a6dd6541f314970b60190f9ee834ff23d350b6823fe5e6723a911a17.png"
-                                         href="6e95a968a6dd6541f314970b60190f9ee834ff23d350b6823fe5e6723a911a17.png"
+                                    <img src="5406d1dc3b58b5138cffa0425886f670a1eb03c7bc83ce629a02a3437fec3232.png"
+                                         href="5406d1dc3b58b5138cffa0425886f670a1eb03c7bc83ce629a02a3437fec3232.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">24.8s</span></td>
+                    <td width="100"><span class="nested-step">10.26s</span></td>
                 </tr>
                 <tr>
                     <td colspan="5">
@@ -439,33 +439,33 @@
                     </td>
                         <td width="160" class="SUCCESS-text">
                                 <a href="275c23f0bab54f095f139c3ea059f86dbaaf18fe311894329dbdd6a222120e84_screenshots.html#screenshots?screenshot=2">
-                                    <img src="6c6667328c59e8c3f1bb893ac28bea57f61d345aa4d6ecc4c22fdd091735e901.png"
-                                         href="6c6667328c59e8c3f1bb893ac28bea57f61d345aa4d6ecc4c22fdd091735e901.png"
+                                    <img src="a41efd1679d84cda3b138e38c3b24bf3a4aef1f4f723121f9b44d2ef2fc1baaf.png"
+                                         href="a41efd1679d84cda3b138e38c3b24bf3a4aef1f4f723121f9b44d2ef2fc1baaf.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                                 <i class="fas fa-arrow-right"></i>
 
                                 <a href="275c23f0bab54f095f139c3ea059f86dbaaf18fe311894329dbdd6a222120e84_screenshots.html#screenshots?screenshot=4">
-                                    <img src="6e95a968a6dd6541f314970b60190f9ee834ff23d350b6823fe5e6723a911a17.png"
-                                         href="6e95a968a6dd6541f314970b60190f9ee834ff23d350b6823fe5e6723a911a17.png"
+                                    <img src="5406d1dc3b58b5138cffa0425886f670a1eb03c7bc83ce629a02a3437fec3232.png"
+                                         href="5406d1dc3b58b5138cffa0425886f670a1eb03c7bc83ce629a02a3437fec3232.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">24.8s</span></td>
+                    <td width="100"><span class="nested-group-step">10.25s</span></td>
                 </tr>
 
                         </table>
                     </td>
                 <tr>
-                <tr class="test-FAILURE">
+                <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
                         <a name="0-2"/>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-2')"
                                style="display:block">
-                                <i class="fa fa-plus-square-o imgstepSection0-2 failure-icon"
+                                <i class="fa fa-plus-square-o imgstepSection0-2 success-icon"
                                    style="margin-left: 40px; float:left;  padding-right:5px"></i>
                             </a>
                     </td>
@@ -474,34 +474,28 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-2')"
                                style="display:block;">
                                 <span class="nested-step">
-                                And Verificar Acceso App "Your balance is: "
+                                And Verifica el Acceso App "Your balance is: "
                             </span>
                             </a>
                             <span class="evidence">
                             </span>
                         </div>
                     </td>
-                        <td width="160" class="FAILURE-text">
+                        <td width="160" class="SUCCESS-text">
 
-                                <a href="275c23f0bab54f095f139c3ea059f86dbaaf18fe311894329dbdd6a222120e84_screenshots.html#screenshots?screenshot=6">
-                                    <img src="c6a1a0c1f7c0610afb22df9e361039bf57ca4265dba5454d6e96e91057b55199.png"
-                                         href="c6a1a0c1f7c0610afb22df9e361039bf57ca4265dba5454d6e96e91057b55199.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
                         </td>
-                    <td width="100"><span class="nested-step">FAILURE</span></td>
-                    <td width="100"><span class="nested-step">9.15s</span></td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">9.63s</span></td>
                 </tr>
                 <tr>
                     <td colspan="5">
                         <table id="stepSection0-2" style="display:none; width:100%">
 
-                <tr class="test-FAILURE">
+                <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
                         <a name="0-2-0"/>
                             <span style="margin-left: 60px; margin-right: 5px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a></span>
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -512,173 +506,392 @@
                             </span>
                         </div>
                     </td>
-                        <td width="160" class="FAILURE-text">
+                        <td width="160" class="SUCCESS-text">
+
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">9.63s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-3"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-3')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0-3 success-icon"
+                                   style="margin-left: 40px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-3')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                When El usuario hace la solicitud de hipoteca
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
 
                                 <a href="275c23f0bab54f095f139c3ea059f86dbaaf18fe311894329dbdd6a222120e84_screenshots.html#screenshots?screenshot=6">
-                                    <img src="c6a1a0c1f7c0610afb22df9e361039bf57ca4265dba5454d6e96e91057b55199.png"
-                                         href="c6a1a0c1f7c0610afb22df9e361039bf57ca4265dba5454d6e96e91057b55199.png"
+                                    <img src="8939a30295e8f0b8b0110e25d4c5b74caa44616b23341a5c08eea195365bcd17.png"
+                                         href="8939a30295e8f0b8b0110e25d4c5b74caa44616b23341a5c08eea195365bcd17.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
-                    <td width="100"><span class="nested-group-step">FAILURE</span></td>
-                    <td width="100"><span class="nested-group-step">9.12s</span></td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">4.9s</span></td>
                 </tr>
-                    <tr class="test-FAILURE">
-                        <td width="40">&nbsp</td>
-                        <td width="%" colspan="4" class="error-message-cell">
-
-
-    <div style="display:block">
-        <div class="table">
-            <div class="row">
-                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">java.lang.AssertionError: Your balance is: </span>
-                </div>
-                <div class="col-sm-2">
-                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-7""
-                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
-                </div>
-             </div>
-        </div>
-    <div>
-
-    <!-- Details Section -->
-    <div class="row stacktrace-details">
-      <div class="col">
-        <div class="collapse multi-collapse" id="stacktraceModal-7">
-            <div class="card">
-                <div class="card-header">
-                    <h4>java.lang.AssertionError </h4>
-                </div>
-                <div class="card-body">
-                    <div>
-                        <pre>com.choucair.moviles.app.steps.LoginSteps.verificarAccesoApp(LoginSteps.java:26)<br />com.choucair.moviles.app.definitions.LoginDefinitions.verificarAccesoApp(LoginDefinitions.java:28)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)<br />org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)<br /></pre>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-                        </td>
-                    </tr>
-
-                        </table>
-                    </td>
                 <tr>
-                <tr class="test-SKIPPED">
+                    <td colspan="5">
+                        <table id="stepSection0-3" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
-                        <a name="0-3"/>
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></a></span>
+                        <a name="0-3-0"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
                     </td>
                     <td>
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                When Ingreso a la opcion Mortgage Request
+                                Ingreso a la opcion mortgage request
                             </span>
                             <span class="evidence">
                             </span>
                         </div>
                     </td>
-                        <td width="160" class="SKIPPED-text">
+                        <td width="160" class="SUCCESS-text">
 
+                                <a href="275c23f0bab54f095f139c3ea059f86dbaaf18fe311894329dbdd6a222120e84_screenshots.html#screenshots?screenshot=6">
+                                    <img src="8939a30295e8f0b8b0110e25d4c5b74caa44616b23341a5c08eea195365bcd17.png"
+                                         href="8939a30295e8f0b8b0110e25d4c5b74caa44616b23341a5c08eea195365bcd17.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
                         </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">4.83s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
                         <a name="0-4"/>
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></a></span>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-4')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0-4 success-icon"
+                                   style="margin-left: 40px; float:left;  padding-right:5px"></i>
+                            </a>
                     </td>
                     <td>
                         <div class="step-description">
-                                <span class="nested-group-step">
-                                And diligencio formulario Mort "juan""rodrig""12""calle1""calle2"
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-4')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                And Diligencia los datos de la solicitud hipoteca "juan""rodrig""12""calle1""calle2"
                             </span>
+                            </a>
                             <span class="evidence">
                             </span>
                         </div>
                     </td>
-                        <td width="160" class="SKIPPED-text">
+                        <td width="160" class="SUCCESS-text">
+                                <a href="275c23f0bab54f095f139c3ea059f86dbaaf18fe311894329dbdd6a222120e84_screenshots.html#screenshots?screenshot=7">
+                                    <img src="6354f1c9a5de4f1635471cdee5661cf78e538768e19979350987042afe930101.png"
+                                         href="6354f1c9a5de4f1635471cdee5661cf78e538768e19979350987042afe930101.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
 
+                                <a href="275c23f0bab54f095f139c3ea059f86dbaaf18fe311894329dbdd6a222120e84_screenshots.html#screenshots?screenshot=12">
+                                    <img src="a3a0c5e056aad2a63723f4d03205ffe0b5d4a63f22b3fa0084b1764b10bd6ab2.png"
+                                         href="a3a0c5e056aad2a63723f4d03205ffe0b5d4a63f22b3fa0084b1764b10bd6ab2.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
                         </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">17.81s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection0-4" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
-                        <a name="0-5"/>
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></a></span>
+                        <a name="0-4-0"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
                     </td>
                     <td>
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                And Seleccionar country "Argentina"
+                                Diligencio formulario mort: juan, rodrig, 12, calle1, calle2
                             </span>
                             <span class="evidence">
                             </span>
                         </div>
                     </td>
-                        <td width="160" class="SKIPPED-text">
+                        <td width="160" class="SUCCESS-text">
+                                <a href="275c23f0bab54f095f139c3ea059f86dbaaf18fe311894329dbdd6a222120e84_screenshots.html#screenshots?screenshot=8">
+                                    <img src="6354f1c9a5de4f1635471cdee5661cf78e538768e19979350987042afe930101.png"
+                                         href="6354f1c9a5de4f1635471cdee5661cf78e538768e19979350987042afe930101.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
 
+                                <a href="275c23f0bab54f095f139c3ea059f86dbaaf18fe311894329dbdd6a222120e84_screenshots.html#screenshots?screenshot=12">
+                                    <img src="a3a0c5e056aad2a63723f4d03205ffe0b5d4a63f22b3fa0084b1764b10bd6ab2.png"
+                                         href="a3a0c5e056aad2a63723f4d03205ffe0b5d4a63f22b3fa0084b1764b10bd6ab2.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
                         </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-SKIPPED">
-                    <td width="50" class="step-icon">
-                        <a name="0-6"/>
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></a></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                And diligenciar el formulario next "Car""15""Agricultural""1,000,000"
-                            </span>
-                            <span class="evidence">
-                            </span>
-                        </div>
-                    </td>
-                        <td width="160" class="SKIPPED-text">
-
-                        </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-SKIPPED">
-                    <td width="50" class="step-icon">
-                        <a name="0-7"/>
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></a></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                Then Realizar hipoteca exitoso
-                            </span>
-                            <span class="evidence">
-                            </span>
-                        </div>
-                    </td>
-                        <td width="160" class="SKIPPED-text">
-
-                        </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">17.8s</span></td>
                 </tr>
 
                         </table>
                     </td>
                 <tr>
-                <tr class="test-FAILURE">
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-5"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-5')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0-5 success-icon"
+                                   style="margin-left: 40px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-5')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                And Selecciona ubicacion para realizar solicitud "Argentina"
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="275c23f0bab54f095f139c3ea059f86dbaaf18fe311894329dbdd6a222120e84_screenshots.html#screenshots?screenshot=14">
+                                    <img src="d2b1e42e83b33992d74f09787572eefaafa8f0196fcd2b7a358f7517c3fa0157.png"
+                                         href="d2b1e42e83b33992d74f09787572eefaafa8f0196fcd2b7a358f7517c3fa0157.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">3.76s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection0-5" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-5-0"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Seleccionar country: Argentina
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="275c23f0bab54f095f139c3ea059f86dbaaf18fe311894329dbdd6a222120e84_screenshots.html#screenshots?screenshot=14">
+                                    <img src="d2b1e42e83b33992d74f09787572eefaafa8f0196fcd2b7a358f7517c3fa0157.png"
+                                         href="d2b1e42e83b33992d74f09787572eefaafa8f0196fcd2b7a358f7517c3fa0157.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">3.75s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-6"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-6')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0-6 success-icon"
+                                   style="margin-left: 40px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-6')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                And Selecciona los datos de la solicitud hipoteca "Car""15""Agricultural""500,000"
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="275c23f0bab54f095f139c3ea059f86dbaaf18fe311894329dbdd6a222120e84_screenshots.html#screenshots?screenshot=15">
+                                    <img src="a7916db0c72cd8c10db576ff7fce93e79fa6b5df16f7564d92d05a416399d6db.png"
+                                         href="a7916db0c72cd8c10db576ff7fce93e79fa6b5df16f7564d92d05a416399d6db.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="275c23f0bab54f095f139c3ea059f86dbaaf18fe311894329dbdd6a222120e84_screenshots.html#screenshots?screenshot=20">
+                                    <img src="df2c6890ec6ef654205879e7ba1d9f572af66eb46f244b0c7d43fb868005ce18.png"
+                                         href="df2c6890ec6ef654205879e7ba1d9f572af66eb46f244b0c7d43fb868005ce18.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">162.95s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection0-6" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-6-0"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Diligenciar el formulario next: Car, 15, Agricultural, 500,000
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="275c23f0bab54f095f139c3ea059f86dbaaf18fe311894329dbdd6a222120e84_screenshots.html#screenshots?screenshot=16">
+                                    <img src="a7916db0c72cd8c10db576ff7fce93e79fa6b5df16f7564d92d05a416399d6db.png"
+                                         href="a7916db0c72cd8c10db576ff7fce93e79fa6b5df16f7564d92d05a416399d6db.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="275c23f0bab54f095f139c3ea059f86dbaaf18fe311894329dbdd6a222120e84_screenshots.html#screenshots?screenshot=20">
+                                    <img src="df2c6890ec6ef654205879e7ba1d9f572af66eb46f244b0c7d43fb868005ce18.png"
+                                         href="df2c6890ec6ef654205879e7ba1d9f572af66eb46f244b0c7d43fb868005ce18.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">162.94s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-7"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-7')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0-7 success-icon"
+                                   style="margin-left: 40px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-7')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                Then Verifica la solicitud exitosa
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="275c23f0bab54f095f139c3ea059f86dbaaf18fe311894329dbdd6a222120e84_screenshots.html#screenshots?screenshot=22">
+                                    <img src="b6e3c25a2b05301c81886b5763027efc6a84fb6e7f31ab335fb1334e72fdd391.png"
+                                         href="b6e3c25a2b05301c81886b5763027efc6a84fb6e7f31ab335fb1334e72fdd391.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">3.81s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection0-7" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-7-0"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Realizar hipoteca exitoso
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="275c23f0bab54f095f139c3ea059f86dbaaf18fe311894329dbdd6a222120e84_screenshots.html#screenshots?screenshot=22">
+                                    <img src="b6e3c25a2b05301c81886b5763027efc6a84fb6e7f31ab335fb1334e72fdd391.png"
+                                         href="b6e3c25a2b05301c81886b5763027efc6a84fb6e7f31ab335fb1334e72fdd391.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">3.81s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-SUCCESS">
                         <td colspan="3"></td>
-                    <td width="100"><span class="top-level-step"><em>FAILURE</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>43.52s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>240.65s</em></span></td>
                 </tr>
 
             </table>

@@ -21,14 +21,14 @@ public class LoginSteps {
 	}
 	
 	@Step("verificar el inicio correcto se sesión")
-	public void verificarAccesoApp(String mensaje)
+	public void verificaElAccesoApp(String mensaje) 
 	{
 		System.out.println("el mensaje es "+mensaje);
 		System.out.println("el otro mensaje es "+loginPageObject.obtenerMensajeLabel());
-		//assertTrue(mensaje, (loginPageObject.obtenerMensajeLabel().contains(mensaje)));
-		assertTrue(mensaje, mensaje.contains(loginPageObject.obtenerMensajeLabel()));
-		//assertTrue(mensaje, mensaje.equals(loginPageObject.obtenerMensajeLabel().substring(0, 17)));
-		//assertTrue(mensaje, mensaje.equals(loginPageObject.obtenerMensajeLabel()));
+	
+		//assertTrue(mensaje, mensaje.contains(loginPageObject.obtenerMensajeLabel()));
+		assertTrue(mensaje, mensaje.equals(loginPageObject.obtenerMensajeLabel().substring(0, 17)));
+
 	
 		
 	

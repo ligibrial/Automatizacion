@@ -1,19 +1,18 @@
 package com.choucair.moviles.app.pageobject;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
-import org.openqa.selenium.JavascriptExecutor;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import static com.choucair.moviles.app.ui.MortagageRequestUI.*;
 
-import java.util.HashMap;
 import java.util.List;
 
 import com.choucair.moviles.app.utils.AccionesObjetos;
 import com.choucair.moviles.app.utils.MobilePageObject;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
+import net.serenitybdd.core.annotations.findby.By;
 public class  MortgageRequestObject extends MobilePageObject{
 	public  MortgageRequestObject(WebDriver driver){super(driver);}
 	
@@ -63,19 +62,37 @@ public class  MortgageRequestObject extends MobilePageObject{
 			accionesObjetosMort.setInputText( coun,country );
 		}
 	}
+
+	
 	
 	public void diligenciarElFormularioNext(String Loan,String Years, String Occupation, String Income) {
 		if (accionesObjetosMort.isAndroid()) {
 			
 			//appiumDriver.findElementsByIosUIAutomation("collectionViews()[0].cells().withPredicate(\"ANY staticTexts.isVisible == TRUE\")");
-			
-			
-		
 		accionesObjetosMort.selecctScroll(Loan);
 		accionesObjetosMort.selecctScroll(Years);
 		accionesObjetosMort.selecctScroll(Occupation);
 		accionesObjetosMort.selecctScroll(Income);
-		/*
+		
+	
+		
+		}else{
+
+		selectScrollIos2(Loan);
+		selectScrollIos2(Years);
+		selectScrollIos2(Occupation);
+		selectScrollIos2(Income);
+			
+			
+
+		
+		}
+	
+    }
+	
+	
+	public void selectScrollIos2(String param) {
+		
 		List<WebElement> tabList = getDriver().findElements(By.className("XCUIElementTypeStaticText"));
 		System.out.println(tabList);
 		 buscarpais:
@@ -83,39 +100,24 @@ public class  MortgageRequestObject extends MobilePageObject{
 			for(WebElement e : tabList) {
 				System.out.println(e.getText());
 				 System.out.println("isDisplayed"+e.isDisplayed());
-				 if (e.getText().contains(cty)&& e.isDisplayed()) {
+				 if (e.getText().contains(param)&& e.isDisplayed()) {
 					 System.out.println(e.isDisplayed());
-					 System.out.println("el texto esta contenido en"+e.getText().contains(cty));
+					 System.out.println("el texto esta contenido en"+e.getText().contains(param));
 					 System.out.println("e.gettext"+e.getText());
-					 System.out.println("el pais es"+cty);
+					 System.out.println("el pais es"+param);
 					 System.out.println("el objeto es "+e);
-					 accionesObjetosFormPay.clickObjeto(e);
+					 accionesObjetosMort.clickObjeto(e);
 					 break buscarpais;
 				 	}
 			 }	
 			System.out.println("entrando a vertical swipe");
-			 verticalSwipe();
+			verticalSwipe();
 		 }
-	*/
-		
-		}else{
-			String up ="up";
-			String down="down";
-			accionesObjetosMort.selectScrollIos(Loan, up);		
-			accionesObjetosMort.selectScrollIos(Years,down);
-			accionesObjetosMort.selectScrollIos(Occupation,down);			
-			accionesObjetosMort.selectScrollIos(Income,down);
-		
-		
 		}
-	
-    }
-	
 	
 	public void realizarClicGuardar() {
 	
-		//accionesObjetosMort.swipe(361, 1118, 370, 591);
-		//accionesObjetosMort.clickObjeto(btnGuardar);
+
 		if (accionesObjetosMort.isAndroid()) {
 		WebElement element6 = (MobileElement) getDriver().findElement(MobileBy.AndroidUIAutomator(
 				"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().resourceId(\""+"com.experitest.ExperiBank:id/saveButton"+"\").instance(0))"));

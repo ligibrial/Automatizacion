@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?><AppiumAUT><XCUIElementTypeApplication type="XCUIElementTypeApplication" name="EriBank" label="EriBank" enabled="true" visible="true" x="0" y="0" width="414" height="896">
+  <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="true" x="0" y="0" width="414" height="896">
+    <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="414" height="896">
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="414" height="896">
+        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="414" height="896">
+          <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="414" height="896">
+            <XCUIElementTypeTable type="XCUIElementTypeTable" name="conutryView" label="conutryView" enabled="true" visible="true" x="0" y="0" width="414" height="896">
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="-218" width="414" height="44">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="-218" width="394" height="1"/>
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="India" name="India" label="India" enabled="true" visible="false" x="0" y="-218" width="374" height="44"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="-174" width="414" height="44">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="-218" width="394" height="1"/>
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="USA" name="USA" label="USA" enabled="true" visible="false" x="0" y="-218" width="374" height="44"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="-130" width="414" height="44">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="-218" width="394" height="1"/>
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Iceland" name="Iceland" label="Iceland" enabled="true" visible="false" x="0" y="-218" width="374" height="44"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="-86" width="414" height="44">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="-218" width="394" height="1"/>
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Greenland" name="Greenland" label="Greenland" enabled="true" visible="false" x="0" y="-218" width="374" height="44"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="-42" width="414" height="44">
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Switzerland" name="Switzerland" label="Switzerland" enabled="true" visible="false" x="20" y="-42" width="374" height="44"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="1" width="394" height="1"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="2" width="414" height="44">
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Norway" name="Norway" label="Norway" enabled="true" visible="true" x="20" y="2" width="374" height="44"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="45" width="394" height="1"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="46" width="414" height="44">
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="New Zealand" name="New Zealand" label="New Zealand" enabled="true" visible="true" x="20" y="46" width="374" height="44"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="89" width="394" height="1"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="90" width="414" height="44">
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Greece" name="Greece" label="Greece" enabled="true" visible="true" x="20" y="90" width="374" height="44"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="133" width="394" height="1"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="134" width="414" height="44">
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Italy" name="Italy" label="Italy" enabled="true" visible="true" x="20" y="134" width="374" height="44"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="177" width="394" height="1"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="178" width="414" height="44">
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Ireland" name="Ireland" label="Ireland" enabled="true" visible="true" x="20" y="178" width="374" height="44"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="221" width="394" height="1"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="222" width="414" height="44">
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="China" name="China" label="China" enabled="true" visible="true" x="20" y="222" width="374" height="44"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="265" width="394" height="1"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="266" width="414" height="44">
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Japan" name="Japan" label="Japan" enabled="true" visible="true" x="20" y="266" width="374" height="44"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="309" width="394" height="1"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="310" width="414" height="44">
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="France" name="France" label="France" enabled="true" visible="true" x="20" y="310" width="374" height="44"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="353" width="394" height="1"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="354" width="414" height="44">
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Russia" name="Russia" label="Russia" enabled="true" visible="true" x="20" y="354" width="374" height="44"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="397" width="394" height="1"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="398" width="414" height="44">
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Australlia" name="Australlia" label="Australlia" enabled="true" visible="true" x="20" y="398" width="374" height="44"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="441" width="394" height="1"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="442" width="414" height="44">
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Canada" name="Canada" label="Canada" enabled="true" visible="true" x="20" y="442" width="374" height="44"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="485" width="394" height="1"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="486" width="414" height="44">
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Brazil" name="Brazil" label="Brazil" enabled="true" visible="true" x="20" y="486" width="374" height="44"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="529" width="394" height="1"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="530" width="414" height="44">
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Indonesia" name="Indonesia" label="Indonesia" enabled="true" visible="true" x="20" y="530" width="374" height="44"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="573" width="394" height="1"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="574" width="414" height="44">
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Nigeria" name="Nigeria" label="Nigeria" enabled="true" visible="true" x="20" y="574" width="374" height="44"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="617" width="394" height="1"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="618" width="414" height="44">
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Bangladesh" name="Bangladesh" label="Bangladesh" enabled="true" visible="true" x="20" y="618" width="374" height="44"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="661" width="394" height="1"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="662" width="414" height="44">
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="MexicoPhilippines" name="MexicoPhilippines" label="MexicoPhilippines" enabled="true" visible="true" x="20" y="662" width="374" height="44"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="705" width="394" height="1"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="706" width="414" height="44">
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Vietnam" name="Vietnam" label="Vietnam" enabled="true" visible="true" x="20" y="706" width="374" height="44"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="749" width="394" height="1"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="750" width="414" height="44">
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Ethiopia" name="Ethiopia" label="Ethiopia" enabled="true" visible="true" x="20" y="750" width="374" height="44"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="793" width="394" height="1"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="794" width="414" height="44">
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Egypt" name="Egypt" label="Egypt" enabled="true" visible="true" x="20" y="794" width="374" height="44"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="837" width="394" height="1"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="838" width="414" height="44">
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Germany" name="Germany" label="Germany" enabled="true" visible="true" x="20" y="838" width="374" height="44"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="881" width="394" height="1"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="882" width="414" height="44">
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Iran" name="Iran" label="Iran" enabled="true" visible="true" x="20" y="882" width="374" height="44"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="20" y="925" width="394" height="1"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="926" width="414" height="44">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="-218" width="394" height="1"/>
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Turkey" name="Turkey" label="Turkey" enabled="true" visible="false" x="0" y="-218" width="374" height="44"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="970" width="414" height="44">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="-218" width="394" height="1"/>
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Thailand" name="Thailand" label="Thailand" enabled="true" visible="false" x="0" y="-218" width="374" height="44"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="1014" width="414" height="44">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="-218" width="394" height="1"/>
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="United Kingdom" name="United Kingdom" label="United Kingdom" enabled="true" visible="false" x="0" y="-218" width="374" height="44"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="1058" width="414" height="44">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="-218" width="394" height="1"/>
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="South Africa" name="South Africa" label="South Africa" enabled="true" visible="false" x="0" y="-218" width="374" height="44"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="1102" width="414" height="44">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="-218" width="394" height="1"/>
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="South Korea" name="South Korea" label="South Korea" enabled="true" visible="false" x="0" y="-218" width="374" height="44"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="1146" width="414" height="44">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="-218" width="394" height="1"/>
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Myanmar" name="Myanmar" label="Myanmar" enabled="true" visible="false" x="0" y="-218" width="374" height="44"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="1190" width="414" height="44">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="-218" width="394" height="1"/>
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Spain" name="Spain" label="Spain" enabled="true" visible="false" x="0" y="-218" width="374" height="44"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="1234" width="414" height="44">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="-218" width="394" height="1"/>
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Colombia" name="Colombia" label="Colombia" enabled="true" visible="false" x="0" y="-218" width="374" height="44"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="1278" width="414" height="44">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="-218" width="394" height="1"/>
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Ukraine" name="Ukraine" label="Ukraine" enabled="true" visible="false" x="0" y="-218" width="374" height="44"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="1322" width="414" height="44">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="-218" width="394" height="1"/>
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Tanzania" name="Tanzania" label="Tanzania" enabled="true" visible="false" x="0" y="-218" width="374" height="44"/>
+              </XCUIElementTypeCell>
+              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="1366" width="414" height="44">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="-218" width="394" height="1"/>
+                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Argentina" name="Argentina" label="Argentina" enabled="true" visible="false" x="0" y="-218" width="374" height="44"/>
+              </XCUIElementTypeCell>
+            </XCUIElementTypeTable>
+          </XCUIElementTypeOther>
+        </XCUIElementTypeOther>
+      </XCUIElementTypeOther>
+    </XCUIElementTypeOther>
+  </XCUIElementTypeWindow>
+  <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="false" x="0" y="0" width="414" height="896">
+    <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="0" width="414" height="896">
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="0" width="414" height="896"/>
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="896" width="414" height="243"/>
+    </XCUIElementTypeOther>
+  </XCUIElementTypeWindow>
+</XCUIElementTypeApplication></AppiumAUT>

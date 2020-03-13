@@ -9,4 +9,10 @@ public class MakePaymentUI {
 	public static String[] btnSelect= {"id","com.experitest.ExperiBank:id/countryButton","accessibility id","Select"};
 	public static String[] paises = {"xpath","/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.ListView","xpath","//XCUIElementTypeTable[@name=\"conutryView\"]\r\n" + 
 			""};
+	
+	public static String[] send = {"id","com.experitest.ExperiBank:id/sendPaymentButton","accessibility id","Send Payment"};
+	public static String[] btnyes= {"id","android:id/button1","accessibility id","Yes"};
+	public static String[] btnNo= {"id","android:id/button2","accessibility id","No"};
+	
+	
 }
